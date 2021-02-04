@@ -1,57 +1,78 @@
+html{
+	font-family: cursive;
+}
+
 body {
 	margin: 0.6% 20%;
 	padding: 0.8% 10%;
 	/*border: 4px red dotted;*/
-	animation: shake 1.5s;
+	animation: shake 96s;
 	animation-iteration-count: infinite;
 }
 
-	@keyframes shake {
-		from {background-color: salmon;}
-		to {background-color: lightgreen;}
-	}
+@keyframes shake {
+	/*from {background: salmon;}
+	to   {background: lightgreen;}*/
+	8.3%   {background: salmon;}
+	16.6%  {background: darkgreen;}
+	24.9%  {background: rebeccapurple;}
+	33.2%  {background: yellowgreen;}
+	41.5%  {background: wheat;}
+	49.8%  {background: violet;}
+	58.1%  {background:  tan;}
+	66.4%  {background:  sandybrown;}
+	74.7%  {background: olive;}
+	83%    {background:  silver;}
+	91.3% {background: darkslategray;} 
+	99.6% {background: lightgreen;}
+}
 
 
-	canvas{
-		border: 20px solid yellow;
-	}
+canvas{
+	border: 20px solid yellow;
+}
 
 
- canvas:hover {
-        border-radius: 20%;
-        padding: 5px;
-        margin: 5px;
-        animation: dance 6.7s;
-        animation-iteration-count: infinite;
-        opacity: 0.6;
-      }
+canvas:hover {
+    border-radius: 20%;
+    padding: 5px;
+    margin: 5px;
+    animation: dance 16.7s;
+    animation-iteration-count: infinite;
+    opacity: 0.6;
+}
       
-      @keyframes dance {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        8% { margin-left: 20px;}
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        15% { transform: translate(1px, 1px) rotate(45deg);}
-        20% { transform: translate(-3px, 0px) rotate(-1deg); }
-        25% {border: 4px double turquoise;}
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        35% {margin-bottom: 20px;}
-        40% { transform: translate(1px, -1px) rotate(-25deg); }
-        45% { transform: translate(1px, 1px) rotate(90deg);}
-        50% { transform: translate(-1px, 2px) rotate(-86deg); }
-        55% {border: 4px dotted springgreen;}
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        65% {margin-right: 20px;}
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        75% {transform: translate(1px, 1px) rotate(180deg);}
-        80% { transform: translate(-1px, -1px) rotate(270deg); }
-        83% {  transform: translate(4px, 4px) rotate(-360deg);}
-        85% {margin-top: 20px;}
-        90% { transform: translate(1px, 2px) rotate(-240deg); }
-        93% {transform: translate(1px, 1px) rotate(360deg);}
-        95% {border: 4px dashed sienna;}
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-        from {background-color: darkgreen;}
-        to {background-color: darkslategray;}
-        
-    }
+@keyframes dance {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    8% { margin-left: 20px;}
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    15% { transform: translate(1px, 1px) rotate(45deg);}
+    20% { transform: translate(-3px, 0px) rotate(-1deg); }
+    25% {border: 4px double turquoise;}
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    35% {margin-bottom: 20px;}
+    40% { transform: translate(1px, -1px) rotate(-25deg); }
+    45% { transform: translate(1px, 1px) rotate(90deg);}
+    50% { transform: translate(-1px, 2px) rotate(-86deg); }
+    55% {border: 4px dotted springgreen;}
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    65% {margin-right: 20px;}
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    75% {transform: translate(1px, 1px) rotate(180deg);}
+    80% { transform: translate(-1px, -1px) rotate(270deg); }
+    83% {  transform: translate(4px, 4px) rotate(-360deg);}
+    85% {margin-top: 20px;}
+    90% { transform: translate(1px, 2px) rotate(-240deg); }
+    93% {transform: translate(1px, 1px) rotate(360deg);}
+    95% {border: 4px dashed sienna;}
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    
+}
 
+/*	display: none;
+}
+
+footer{
+	background-color: red;
+	display: none;
+}*/

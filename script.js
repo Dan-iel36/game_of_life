@@ -1,8 +1,17 @@
+confirm('Hi, this site is made of living cells which revives at all times and a constatly changing background to stare at when you are bored. Any actions you take will revive the cells otherwise wait for 15s.');
+//'\n' line break was difficult to manage as it changes with browser
+
+confirm('Bonjour, ce site est fait de cellules vivantes qui revivent à tout moment et d\'un arrière-plan en constante évolution pour regarder quand vous vous ennuyez. Toutes les actions que vous entreprenez raviveront les cellules, sinon attendez 15 secondes.');
+
+
+
+
 var w;
 var columns;
 var rows;
 var board;
 var next;
+
 
 function setup() {
 	createCanvas(650, 650);
@@ -21,6 +30,7 @@ function setup() {
 		next[i] = new Array(rows);
 	}
 	init();
+	
 }
 
 function draw(){
@@ -32,7 +42,18 @@ function draw(){
 			else fill (255);
 			stroke(0);
 			rect(i * w, j * w, w - 1, w - 1);
-		}
+			}
+	}	
+
+	let s = second();
+	if (s === 15) {
+		init();
+	} else if (s === 30) {
+		init();
+	} else if (s === 45) {
+		init();
+	}else if (s === 0 || s === 00){
+		init();
 	}
 }
 
@@ -54,7 +75,7 @@ function mouseWheel(){
 	init();
 }
 
-function keyISPressed(){
+function keyIsPressed(){
 	init();
 }
 
@@ -117,5 +138,6 @@ function generate(){
 	board = next;
 	next = temp;
 }
+
 
 

@@ -1,0 +1,26 @@
+{
+  "short_name": "gof",
+  "name": "game of life",
+  "start_url" :".", //"dan-iel36.github.io/game_of_life",
+  "icons": [
+    {
+      "src": "game_of_life.png",
+      "type": "image/png",
+      "sizes": "140x140"
+    },
+    {
+      "src": "gof.png",
+      "type": "image/png",
+      "sizes": "650x650"
+    }
+  ],
+
+
+  "start_url": "dan-iel36.github.io/game_of_life",
+  "background_color": "#6dcdb1",
+  "display": "standalone",
+  "theme_color": "#3367D6",
+  "description": "Living cells survive"
+}
+
+#was trying progressive web app

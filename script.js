@@ -1,8 +1,9 @@
+window.alert('!!!Be careful, this site produce sound. Attention, ce site produce de son.!!!');
+
 confirm('Hi, this site is made of living cells which revives at all times and a constatly changing background to stare at when you are bored. Any actions you take will revive the cells otherwise wait for 15s.');
 //'\n' line break was difficult to manage as it changes with browser
 
 confirm('Bonjour, ce site est fait de cellules vivantes qui revivent à tout moment et d\'un arrière-plan en constante évolution pour regarder quand vous vous ennuyez. Toutes les actions que vous entreprenez raviveront les cellules, sinon attendez 15 secondes.');
-
 
 
 
@@ -30,7 +31,6 @@ function setup() {
 		next[i] = new Array(rows);
 	}
 	init();
-	
 }
 
 function draw(){
